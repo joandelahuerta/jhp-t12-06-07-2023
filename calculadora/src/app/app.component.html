@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="calculadora">
+    <input type="text" class="form-control barra" [value]="display" disabled>
+    <div class="row linea">
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(7)">7</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(8)">8</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(9)">9</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendOperator('/')">/</button>
+      </div>
+    </div>
+    <div class="row linea">
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(4)">4</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(5)">5</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(6)">6</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendOperator('*')">*</button>
+      </div>
+    </div>
+    <div class="row linea">
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(1)">1</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(2)">2</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(3)">3</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendOperator('-')">-</button>
+      </div>
+    </div>
+    <div class="row linea">
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendOperator('.')">.</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendNumber(0)">0</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="calculate()">=</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="appendOperator('+')">+</button>
+      </div>
+    </div>
+    <div class="row linea">
+      <div class="col">
+        <button class="btn btn-lg botones" (click)="clear()">C</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.calculadora {
+    max-width: 300px;
+    margin: 50px auto;
+    background-color: #4DB7AD;
+    border-radius: 5px;
+    padding: 20px;
+}
+.barra {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #d3d3d3;
+}
+.linea {
+    margin-bottom: 10px;
+}
+.botones {
+    background-color: #8D6E63 !important;
+    color: white !important;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+}

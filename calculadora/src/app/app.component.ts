@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   display: string = '';
-
+  //Numeros
   appendNumber(number: number) {
     this.display += number.toString();
   }
-
+  //Operaciones
   appendOperator(operator: string) {
     this.display += operator;
   }
-
+  //Calcular operacion insertada
   calculate() {
     try {
       this.display = eval(this.display);
@@ -23,7 +23,7 @@ export class AppComponent {
       this.display = 'Error';
     }
   }
-
+  //Limpiar
   clear() {
     this.display = '';
   }
